@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>
+    <!--<li th:each="m : ${map.entry}">
+        <span th:text="${m.key}"></span>
+        <span th:text="${m.value}"></span>
+    </li>-->
+
+    <!--<p th:text="${map.get('maps')}"></p>-->
+
+    <table>
+        <tr th:each="map : ${maps}">
+            <td th:text="${map.key}"></td><!-- key-->
+            <td th:text="${map.value}"></td><!-- value-->
+        </tr>
+    </table>
+</h3>
+</body>
+</html>

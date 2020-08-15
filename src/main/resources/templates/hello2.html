@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1>
+    欢迎您: <span th:text="${user.name}">请登录</span>!
+</h1>
+
+<h3>
+    <span th:text="|Age: ${user.age}|"></span>
+    <span th:text="${user.age}%2 == 0"></span>
+
+    <span th:text="${user.sex}==0 ? '男':'女'"></span>
+</h3>-->
+<!--<h3>
+    <span th:text="${name} ?: '二狗'"></span>
+</h3>-->
+
+<h3>
+    <span th:if="${user.age} < 18">小鲜肉</span>
+</h3>
+
+<!--<h1>
+    <span th:text="'欢迎您: ' + ${user.name} + '!'"></span>
+</h1>
+<h1>
+    <span th:text="|欢迎您: ${user.name} !|"></span>
+</h1>-->
+</body>
+</html>
